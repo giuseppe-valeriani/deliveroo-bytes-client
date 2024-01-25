@@ -1,0 +1,62 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  &__inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__arrow {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &__input {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 2px;
+    padding: 0.5rem;
+    // padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    &::placeholder {
+      background-image: url("../../assets/icons/search.png");
+      background-repeat: no-repeat;
+      background-position: revert 1rem;
+      color: #ccc;
+    }
+  }
+
+  &__filters {
+    display: flex;
+    align-items: flex-end;
+    padding: 0.5rem 0;
+  }
+
+  &__filter {
+    color: #00ccbc;
+    width: contain;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.7rem;
+    border-radius: 10px;
+
+    &:nth-child(1) {
+      background-color: #00ccbc;
+      color: white;
+      width: contain;
+    }
+  }
+
+  &__contacts {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  &__text {
+    padding: 0.5rem 1rem;
+  }
+}
