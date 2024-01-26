@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem;
+  padding: 0 1rem;
 
   &__wrap {
     height: 100vh;
@@ -19,7 +19,6 @@
     font-family: Plex-Sans;
     font-style: normal;
     font-weight: 700;
-    margin-bottom: 2rem;
     font-size: 1.75rem;
     line-height: 2.25rem;
     padding-top: 2rem;
@@ -84,5 +83,20 @@
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 2rem;
+  }
+}
+
+.modal {
+  bottom: 50%;
+  display: flex;
+  max-height: 90vh;
+  max-width: 80vw;
+  margin: auto;
+  background-color: white;
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
   }
 }
