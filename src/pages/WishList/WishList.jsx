@@ -16,7 +16,6 @@ const WishList = () => {
   useEffect(() => {
     getGifts();
   }, []);
-  console.log(gifts);
   return (
     <main className="main">
       <div className="wishlist-title">
@@ -31,7 +30,7 @@ const WishList = () => {
           {gifts &&
             gifts.map((gift) => {
               return (
-                <Link to="/">
+                <Link to="/" key={gift.id}>
                   <div className="card" key={gift.id}>
                     <img
                       className="gift-image"
