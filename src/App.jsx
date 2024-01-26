@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:name" element={<WishList />} />
+        <Route path="/name/:pageName" element={<WishList />} />
       </Routes>
     </BrowserRouter>
   );

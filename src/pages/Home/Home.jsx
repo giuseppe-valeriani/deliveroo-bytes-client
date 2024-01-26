@@ -21,7 +21,7 @@ const customModalStyle = {
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     width: "100vw",
-    height: "60vh",
+    height: "50vh",
     padding: "0",
   },
 };
@@ -29,7 +29,7 @@ const customModalStyle = {
 const Home = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [friends, setFriends] = useState(null);
-  const [page, setPage] = useState();
+  const [pageName, setPageName] = useState();
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -39,7 +39,7 @@ const Home = () => {
   };
 
   const handleChange = (e) => {
-    console.log(e.target.value);
+    setPageName(e.target.value);
   };
 
   const getFriends = async () => {
@@ -99,7 +99,7 @@ const Home = () => {
                   })}
               </select>
             </div>
-            <Link to="/name">
+            <Link to={`/name/${pageName}`}>
               <img
                 className="modal__arrow"
                 alt="arrow forward"
