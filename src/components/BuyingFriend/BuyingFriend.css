@@ -1,0 +1,21 @@
+.buying {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  top: 36%;
+}
+.buying__button-area {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 10px 5px 5px #ccc;
+}
+.buying__button {
+  background-color: #00ccbc;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+}/*# sourceMappingURL=BuyingFriend.css.map */

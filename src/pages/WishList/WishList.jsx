@@ -4,8 +4,10 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import backArrow from "../../assets/icons/Back Button.svg";
 import search from "../../assets/icons/search.png";
+
 const API_URL = process.env.REACT_APP_API_URL;
 const PORT = process.env.REACT_APP_PORT;
+
 const WishList = () => {
   const params = useParams();
   const [gifts, setGifts] = useState(null);
@@ -30,7 +32,7 @@ const WishList = () => {
           {gifts &&
             gifts.map((gift) => {
               return (
-                <Link to="/" key={gift.id}>
+                <Link to={`/gifts/${gift.id}`} key={gift.id}>
                   <div className="card" key={gift.id}>
                     <img
                       className="gift-image"

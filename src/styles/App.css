@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Plex-Sans;
+  src: url(../../assets/fonts/IBMPlexSans-Bold.ttf) format(TrueType);
+  font-style: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Plex-Sans;
+  src: url(../../assets/fonts/IBMPlexSans-Regular.ttf) format(TrueType);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Plex-Sans;
+  src: url(../../assets/fonts/IBMPlexSans-Light.ttf) format(TrueType);
+  font-style: normal;
+  font-weight: 400;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Plex-Sans;
+}/*# sourceMappingURL=App.css.map */
