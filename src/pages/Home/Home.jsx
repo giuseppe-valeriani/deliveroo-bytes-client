@@ -6,6 +6,7 @@ import axios from "axios";
 import arrowLeft from "../../assets/icons/Back Button.svg";
 import arrowRight from "../../assets/icons/Forward Button.svg";
 import contactIcon from "../../assets/icons/Contact Icon.svg";
+import BuyingFriend from "../../components/BuyingFriend/BuyingFriend";
 
 const API_URL = process.env.REACT_APP_API_URL;
 const PORT = process.env.REACT_APP_PORT;
@@ -52,7 +53,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <main className="home">
       <Modal
         style={customModalStyle}
         closeModal={closeModal}
@@ -109,8 +110,9 @@ const Home = () => {
           </div>
         </section>
       </Modal>
-      <button onClick={openModal}>Click</button>
-    </>
+      <BuyingFriend openModal={openModal} />
+      {/* <button onClick={openModal}>Click</button> */}
+    </main>
   );
 };
 

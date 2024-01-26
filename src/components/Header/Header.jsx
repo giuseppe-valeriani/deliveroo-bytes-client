@@ -1,5 +1,4 @@
 import React from "react";
-import coverage from "../../assets/icons/coverage.png";
 import wifi from "../../assets/icons/wifi.png";
 import battery from "../../assets/icons/battery.png";
 import "./Header.scss";
@@ -23,7 +22,7 @@ const Header = () => {
         {hours}:{minutes}
       </div>
       <div className="header__corner">
-        <img className="header__icons" alt="coverage" src={coverage} />
+        {/* <img className="header__icons" alt="coverage" src={coverage} /> */}
         <img className="header__icons" alt="wifi" src={wifi} />
         <img className="header__icons" alt="battery" src={battery} />
       </div>
