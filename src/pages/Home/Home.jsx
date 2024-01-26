@@ -32,7 +32,7 @@ const customModalStyle = {
 const Home = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [friends, setFriends] = useState(null);
-  const [pageName, setPageName] = useState();
+  const [pageName, setPageName] = useState("John Doe");
 
   const openModal = () => {
     setModalIsOpen(true);
