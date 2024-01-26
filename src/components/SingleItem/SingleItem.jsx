@@ -22,12 +22,12 @@ const SingleItem = () => {
 
   const openModal = () => {
     setModalIsOpen(true);
-  };
-  const closeModal = () => {
     setTimeout(() => {
-      setModalIsOpen(false);
       navigate("/");
     }, 2000);
+  };
+  const closeModal = () => {
+    setModalIsOpen(false);
   };
 
   const getGift = async () => {
