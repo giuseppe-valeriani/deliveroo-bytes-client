@@ -48,7 +48,9 @@ const SingleItem = () => {
         <img className="modal__logo" alt="deliveroo logo" src={deliverooLogo} />
         <div>Your gift has now been purchased</div>
         <div>Now sit back and relax</div>
-        <button onClick={closeModal}>Nice!</button>
+        <button className="modal__button" onClick={closeModal}>
+          Nice!
+        </button>
       </Modal>
       <article className="single-gift_wrap">
         <div className="single-gift">

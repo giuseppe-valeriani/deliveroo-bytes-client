@@ -32,7 +32,11 @@ const WishList = () => {
           {gifts &&
             gifts.map((gift) => {
               return (
-                <Link to={`/gifts/${gift.id}`} key={gift.id}>
+                <Link
+                  className="gift-link"
+                  to={`/gifts/${gift.id}`}
+                  key={gift.id}
+                >
                   <div className="card" key={gift.id}>
                     <img
                       className="gift-image"
