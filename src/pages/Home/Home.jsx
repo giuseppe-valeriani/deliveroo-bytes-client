@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import "./Home.scss";
 import Modal from "react-modal";
 import axios from "axios";
+import mainBackground from "../../assets/images/Gift Page Photo.svg";
 import arrowLeft from "../../assets/icons/Back Button.svg";
 import arrowRight from "../../assets/icons/Forward Button.svg";
 import contactIcon from "../../assets/icons/Contact Icon.svg";
+import BuyingFriend from "../../components/BuyingFriend/BuyingFriend";
+import MainBottom from "../../components/MainBottom/MainBottom";
 
 const API_URL = process.env.REACT_APP_API_URL;
 const PORT = process.env.REACT_APP_PORT;
@@ -15,13 +18,13 @@ Modal.defaultStyles.overlay.backgroundColor = "rgba(0,0,0,0.7)";
 const customModalStyle = {
   content: {
     bottom: "auto",
-    left: "50%",
+    // left: "50%",
     right: "auto",
-    top: "100%",
+    // top: "100%",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     width: "100vw",
-    height: "50vh",
+    // height: "50vh",
     padding: "0",
   },
 };
@@ -52,7 +55,8 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <main className="home">
+      <BuyingFriend openModal={openModal} />
       <Modal
         style={customModalStyle}
         closeModal={closeModal}
@@ -109,8 +113,8 @@ const Home = () => {
           </div>
         </section>
       </Modal>
-      <button onClick={openModal}>Click</button>
-    </>
+      <MainBottom />
+    </main>
   );
 };
 

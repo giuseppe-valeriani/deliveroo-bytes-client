@@ -1,3 +1,21 @@
+.home {
+  background-image: url("../../assets/images/Gift\ Page\ Photo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+  height: 40vh;
+
+  &__gift-box {
+    width: 100vw;
+  }
+
+  &__gift {
+    // height: 40vh;
+    // width: 100vw;
+    // align-items: center;
+  }
+}
+
 .modal {
   display: flex;
   flex-direction: column;
