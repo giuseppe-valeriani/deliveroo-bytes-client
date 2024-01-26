@@ -10,17 +10,16 @@
   }
 
   &__arrow {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1rem;
+    height: 1rem;
   }
 
   &__input {
-    width: 80%;
+    width: 85%;
     background-color: rgba(0, 0, 0, 0.05);
     border: none;
     border-radius: 2px;
     padding: 0.5rem;
-    // padding-left: 2rem;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -56,7 +55,29 @@
   &__contacts {
     background-color: rgba(0, 0, 0, 0.05);
   }
+
   &__text {
     padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  &__select-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+  }
+
+  &__select {
+    margin: 1rem;
+  }
+
+  &__option {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  &__arrow {
+    display: block;
   }
 }
