@@ -78,6 +78,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 0.5rem;
+    background-color: white;
   }
 
   &__select {
@@ -85,7 +86,6 @@
   }
 
   &__option {
-    margin: 0;
     padding: 1rem;
   }
 
